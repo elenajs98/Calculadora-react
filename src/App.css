@@ -1,38 +1,41 @@
-.App {
+/*aspectos generales: bordes y color de fondo de calculadora*/
+.titulo {
+  width: 100%;
   text-align: center;
+  min-width: 200px;
+}
+.calculadora {
+  border: 3px#c999af ridge;
+  min-width: 250px;
+  max-width: 250px;
+  text-align: center;
+  background-color: #fdcae1;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+#textoPantalla {
+  width: 185px;
+  border: 2px #e3b1c8 solid;
+  border-radius: 5px;
+  text-align: right;
+  position: relative;
+  margin-bottom: 7px;
+  background-color: #ffe5f0;
+  font-family: "courier new";
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*botones normales: anchura y margen*/
+.calculadora [type="button"] {
+  width: 35px;
+  padding: 0;
+  background-color: #ffe5f0;
+  border-radius: 5px;
+  border-color: #e3b1c8;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*botones especiales*/
+.calculadora input.largo {
+  width: 60px;
 }
