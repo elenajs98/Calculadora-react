@@ -1,18 +1,18 @@
 //import React from 'react';
-import React from 'react';
+import React, {useState} from 'react';
 
-export const Calculadora = () => {
-    
+const Calculadora = () => {
+  const[count, setCount] = useState(0);
+  const [resultado, setResultado]=useState(0);
     //declaración de variables
 var numeroEnProceso = "";
 var num1 = 0;
-var historico = "1\n1";
 var cifras = 0;
 var simbolo;
 var numeroAcabado = 0;
 var opera;
 var coma=0;
-console.log(historico);
+console.log(numeroEnProceso);
 //función que escribe el número tecleado
 function Pantalla(){
 
@@ -156,4 +156,5 @@ function opuesto() {
       </>
   );
 };
+}
 export default Calculadora;
